@@ -1,0 +1,11 @@
+{% load bootstrap5 %}
+{% load boostrap5_css %}
+{% load bootstrap5_javascript %}
+
+<!DOCTYPE html>
+<html></html>
+<body>
+    {% csrf_token %}
+<form>
+    {% bootstrap5_form form.as_p %}
+    </form>

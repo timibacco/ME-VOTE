@@ -1,0 +1,23 @@
+{% extends '../base.html' %}
+
+{% block content %}
+<h1>{{ process.name }}</h1>
+<p>Start Date: {{ process.start_date }}</p>
+<p>End Date: {{ process.end_date }}</p>
+<p>Voters:</p>
+<ul>
+    {% for voter in voters %}
+    <li>{{ voter.name }} - {{ voter.email }}</li>
+    {% endfor %}
+</ul>
+<form method="post">
+    {% csrf_token %}
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    <br>
+    <input type="submit" value="Register">
+</form>
+{% endblock %}

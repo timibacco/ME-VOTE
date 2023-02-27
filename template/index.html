@@ -1,0 +1,100 @@
+{% extends 'base.html' %} 
+{% load bootstrap5 %}
+{% bootstrap_css %}
+  {% bootstrap_javascript %}
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-purple">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="@Ongoing elections" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+ <header class="bg-transparent py-5">
+      <h1 class="text-grey text-center">“The ballot is stronger than the bullet.” 
+
+        — Abraham Lincoln, 16th President of the United States from 1861 to 1865</h1>
+      <p class="text-grey text-center">Cast your vote and make a difference</p>
+      <a href="{% url 'login' %}" class="btn btn-outline-primary btn-lg mt-4 " role ="button">Get Started</a>
+    </div>
+  </header>
+  
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Features</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+                   
+              <h4 class="card-title">Secure and Anonymous</h4><i class="fa-solid fa-file-shield"></i>
+              <p class="card-text">Your vote is protected with end-to-end encryption and your identity remains anonymous.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Convenient and Accessible</h4>
+              <p class="card-text">Cast your vote from anywhere, at any time, on any device.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Transparent and Verifiable</h4>
+              <p class="card-text">See the results in real-time and verify the accuracy of the outcome.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="card-text"></p>
+    </div>
+  </section>
+  
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Get in Touch</h2>
+      <h4 class="card-text">Have a question or need assistance? Contact us anytime and we'll get back to you as soon as possible.</h4>
+    </div>
+  </section>
+
+{% endblock content %}
