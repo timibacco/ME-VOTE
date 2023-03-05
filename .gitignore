@@ -68,3 +68,4 @@ Elections/migrations/__pycache__/0005_electoralprocess_uuid_alter_electoralproce
 Elections/migrations/__pycache__/0006_remove_electoralprocess_id_and_more.cpython-311.pyc
 Elections/migrations/__pycache__/0007_alter_electoralprocess_uuid.cpython-311.pyc
 Elections/migrations/__pycache__/0008_alter_electoralprocess_link.cpython-311.pyc
+.env
